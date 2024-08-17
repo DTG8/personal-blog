@@ -72,3 +72,20 @@ h1 {
     text-align: center;
     margin-bottom: 20px; /* Optional: Add some space below the title */
 }
+
+#blog-posts {
+    list-style: none;
+    padding: 0;
+}
+
+#blog-posts li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#blog-posts img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px;
+}
