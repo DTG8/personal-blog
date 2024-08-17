@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Blog</h1>
+        <h1>Welcome to My Blog</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -19,16 +19,25 @@
     </header>
 
     <main>
-        <article>
-            <h2>Blog Post Title</h2>
-            <p>This is the content of the blog post...</p>
-        </article>
-        <!-- Add more blog posts as needed -->
+        <!-- Search bar for filtering posts -->
+        <input type="text" id="search-bar" placeholder="Search blog posts..." onkeyup="filterPosts()">
+        
+        <ul id="blog-posts">
+            <li data-keywords="tech cyberspace computers internet">
+                <a href="posts/post1.html">My Love and Passion for Tech and the Cyberspace</a>
+            </li>
+            <li data-keywords="web development cybersecurity matrix">
+                <a href="posts/post2.html">My Love and Enthusiasm for Web Development and Cybersecurity</a>
+            </li>
+            <!-- Add more blog posts here -->
+        </ul>
     </main>
 
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 

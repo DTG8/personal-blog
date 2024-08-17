@@ -39,3 +39,36 @@ footer {
     text-align: center;
     padding: 1em 0;
 }
+
+#search-bar {
+    width: 25%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+ul#blog-posts li {
+    margin-bottom: 1em;
+    list-style-type: none;
+}
+
+/* Center the article and set a max width */
+article {
+    margin: 0 auto; /* Center the article horizontally */
+    max-width: 800px; /* Adjust the max-width as needed */
+    padding: 20px; /* Optional: Add some padding around the article */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better presentation */
+}
+
+/* Optional: Style the image to be centered within the article */
+article img {
+    display: block; /* Remove any inline spacing */
+    margin: 0 auto; /* Center the image */
+}
+
+/* Center the article title */
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Optional: Add some space below the title */
+}
