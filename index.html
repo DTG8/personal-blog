@@ -22,6 +22,11 @@
         <!-- Search bar for filtering posts -->
         <input type="text" id="search-bar" placeholder="Search blog posts..." onkeyup="filterPosts()">
 
+        <!-- Sorting buttons -->
+        <div id="sorting-buttons">
+            <button onclick="sortPostsByDate()">Sort by Date</button>
+            <button onclick="sortPostsByCategory()">Sort by Category</button>
+        </div>
         <!-- Blog posts -->
             
                 <h2>MY GROWTH & PERSONAL DEVELOPMENT</h2>
@@ -45,6 +50,13 @@
                         </li>
                         <!-- Add more blog posts here -->
                     </ul>
+                    <!-- Add this below the blog posts list -->
+<div id="pagination">
+    <button id="prev-page" onclick="changePage(-1)">Previous</button>
+    <span id="page-number">Page 1</span>
+    <button id="next-page" onclick="changePage(1)">Next</button>
+</div>
+
                     
     </main>
 
