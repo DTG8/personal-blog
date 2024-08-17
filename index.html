@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Blog</h1>
+        <h1>Welcome to My Blog</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -19,16 +19,40 @@
     </header>
 
     <main>
-        <article>
-            <h2>MY GROWTH & PERSONAL DEVELOPMENT</h2>
-            <p>This is the content of the blog post...</p>
-        </article>
-        <!-- Add more blog posts as needed -->
+        <!-- Search bar for filtering posts -->
+        <input type="text" id="search-bar" placeholder="Search blog posts..." onkeyup="filterPosts()">
+
+        <!-- Blog posts -->
+            
+                <h2>MY GROWTH & PERSONAL DEVELOPMENT</h2>
+                <p style="text-align: left;">In the ever-evolving tech space, my journey has been one of continuous learning and steady progress. Embracing the principle of "slow and steady," I focus on incremental improvements and small wins that compound over time. Each project, whether it's coding a new feature or experimenting with a new technology, contributes to my overall growth.
+
+                    I plan to document this journey on my blog, capturing milestones and reflecting on the lessons learned. By sharing both successes and challenges, I hope to provide insights and inspiration for others navigating their own tech paths. This blog will serve as a personal archive of my development, highlighting how persistence and gradual progress can lead to significant achievements in the tech world. Join me as I explore, learn, and grow in this dynamic field, one step at a time.</p>
+                
+        
+                    <ul id="blog-posts">
+                        <li data-keywords="tech cyberspace computers internet">
+                            <a href="posts/post1.html">
+                                <img src="images/computers-and-internet.webp" alt="Tech and Cyberspace" style="width:100px; height:auto; margin-right:10px;">
+                                My Love and Passion for Tech and the Cyberspace
+                            </a>  
+                        </li>
+                        <li data-keywords="web development cybersecurity matrix">
+                            <a href="posts/post2.html">
+                                <img src="images/matrix-web-dev.webp" alt="Web Development and Cybersecurity" style="width:100px; height:auto; margin-right:10px;">
+                                My Love and Enthusiasm for Web Development and Cybersecurity
+                            </a>
+                        </li>
+                        <!-- Add more blog posts here -->
+                    </ul>
+                    
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Daniel Mobolade. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
